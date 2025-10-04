@@ -1,0 +1,68 @@
+#app {
+  height: 100%;
+  display: flex; /* 可选：启用弹性布局 */
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.router-view {
+  flex: 1; /* 填充剩余空间 */
+  /* 或直接设置 height: 100% */
+}
+
+/* 色彩变量定义 */
+:root {
+  /* 主色调 - 蓝色系 */
+  --primary-color: #3b82f6; /* 主蓝色 */
+  --primary-hover: #2563eb; /* 悬浮状态 */
+  --primary-active: #1d4ed8; /* 激活状态 */
+  --primary-light: #dbeafe; /* 浅色背景 */
+  
+  /* 辅助色 */
+  --secondary-color: #8b5cf6; /* 紫色调 - 用于特殊强调 */
+  --success-color: #10b981; /* 成功色 */
+  --warning-color: #f59e0b; /* 警告色 */
+  --error-color: #ef4444; /* 错误色 */
+  
+  /* 中性色 */
+  --bg-primary: #ffffff; /* 主背景 */
+  --bg-secondary: #f9fafb; /* 次要背景 */
+  --bg-tertiary: #f3f4f6; /* 第三级背景 */
+  --bg-dark: #1f2937; /* 深色背景 */
+  --text-primary: #111827; /* 主要文字 */
+  --text-secondary: #4b5563; /* 次要文字 */
+  --text-tertiary: #9ca3af; /* 第三级文字 */
+  --border-color: #e5e7eb; /* 边框颜色 */
+  
+  /* 层级颜色 */
+  --level-1-bg: #1f2937; /* 第一层路由背景 */
+  --level-1-text: #f9fafb; /* 第一层路由文字 */
+  --level-2-bg: #f3f4f6; /* 第二层路由背景 */
+  --level-3-bg: #ffffff; /* 第三层路由背景 */
+}
+
+/* 全局链接样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-tertiary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
